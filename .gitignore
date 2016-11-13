@@ -1,33 +1,16 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+#include <stdio.h>
+#include <stdlib.h>
 
-# Precompiled Headers
-*.gch
-*.pch
+int main()
+{int i,sum=1;
+    for(i=1;i<=15;i++)
+    {
+        if(i%2==1)
+        {
+            sum=sum*i;
+        }
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+    }
+    printf("\n\nMultiplication of odd numbers 1-15: %d",sum);
+}
+    
